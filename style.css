@@ -1,0 +1,135 @@
+.wrapper {
+    margin: 0;
+    margin-top: 40px;
+    font-family: sans-serif;
+    background-color: #222;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(4, 200px);
+}
+
+.client {
+    width: 100px;
+    background-color: #444;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 12px;
+}
+
+.client_1 {
+    grid-row: 2/3;
+}
+
+.client_2 {
+    grid-row: 3/4;
+}
+
+.client_3 {
+    grid-row: 4/5;
+}
+
+.gateway {
+    grid-row: 2/5;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    justify-self: center;
+    border-radius: 12px;
+}
+
+.database {
+    grid-row: 1/6;
+    grid-column: 3/5;
+    border: 2px silver dashed;
+    border-radius: 12px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.database__server {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 2/5;
+    background-color: #444;
+    border-radius: 12px;
+    width: 100px;
+}
+
+.darabase__service {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    grid-column: 2/4;
+    border-radius: 12px;
+}
+
+.darabase__service_acc {
+    grid-row: 2/3;
+}
+
+.darabase__service_auth {
+    grid-row: 3/4;
+}
+
+.darabase__service_res {
+    grid-row: 4/5;
+}
+
+.darabase__service_user {
+    grid-row: 5/6;
+}
+
+.light__rigth {
+    position: relative;
+}
+
+.light__rigth::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+    top: 50%;
+    right: -2px;
+    box-shadow: 0 0 5px white;
+}
+
+.light__left {
+    position: relative;
+}
+
+.light__left::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+    top: 50%;
+    left: -2px;
+    box-shadow: 0 0 5px white;
+}
